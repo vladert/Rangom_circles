@@ -31,8 +31,8 @@ class Example(QMainWindow):
     def drawRandomCircles(self, qp):
         for _ in range(10):  # рисуем 10 случайных окружностей
             size = random.randint(10, 100)  # случайный размер
-            x = random.randint(10, 500)  # случайная позиция по оси x
-            y = random.randint(10, 500)  # случайная позиция по оси y
+            x = random.randint(10, 500)  # случайная позиция по x
+            y = random.randint(10, 500)  # случайная позиция по y
             color = QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))  # случайный цвет
             qp.setBrush(color)
             qp.drawEllipse(x, y, size, size)
